@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharan's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("Za1y2wf9uII6INU1O");
+    })();
+  </script>
+
+</head>
+<body>
+
+  <header>
+    <div class="logo">Sharan Vijayan</div>   
+    <nav>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Tech Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="hamburgerBtn" class="hamburger">
+      &#9776;
+    </button>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <div class="about-wrapper">
+      <div class="about-text">
+        <h1>Hi, I'm Sharan</h1>
+        <p>I’m a frontend developer comfortable building clean, responsive web applications using modern JavaScript frameworks. I have basic working knowledge of backend development using Node.js, Express.js, and PostgreSQL, and I enjoy understanding how frontend and backend systems connect to build complete applications.</p>
+      </div>
+      <div class="about-image">
+        <img src="./DSC_0009__1_-removebg-preview.png" alt="Sharan Vijayan">
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Tech Stack</h2>
+    <div class="tech-stack">
+      <div class="tech-items">
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+          <span>HTML</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+          <span>CSS</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+          <span>React.js</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" />
+          <span>Next.js</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+          <span>TypeScript</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+          <span>Tailwind CSS</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <span>Python</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+          <span>Node.js</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" />
+          <span>Express.js</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+          <span>MySQL</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+          <span>PostgreSQL</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.simpleicons.org/drizzle/C5F74F" alt="Drizzle ORM" />
+          <span>Drizzle ORM</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" />
+          <span>Supabase</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" />
+          <span>Firebase</span>
+        </div>
+        <div class="tech-icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+          <span>Docker</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Purple NICU</h3>
+        <p class="project-type">Website - Commercial</p>
+        <p>Healthcare website built with a clean, responsive UI to showcase neonatal care services and support families with clear, accessible information.</p>
+        <p class="project-tech">Next.js • Tailwind CSS</p>
+        <a href="https://purplenicu.com/" class="project-link" target="_blank">View Project →</a>
+      </div>
+      <div class="card">
+        <h3>InkSigma</h3>
+        <p class="project-type">Web App - Commercial</p>
+        <p>Redesigned collaborative blogging platform focused on improved UX, performance, and editorial workflows for multi-tenant content publishing.</p>
+        <p class="project-tech">Next.js • Express.js • Tailwind CSS • PostgreSQL</p>
+        <a href="https://inksigma.com/" class="project-link" target="_blank">View Project →</a>
+      </div>
+      <div class="card">
+        <h3>Shaflix</h3>
+        <p class="project-type">Web App - Personal</p>
+        <p>Mood-based movie discovery web app that enables users to explore and filter movies through an intuitive, responsive interface.</p>
+        <p class="project-tech">Next.js • TypeScript • Tailwind CSS</p>
+        <a href="https://shaflix-app.vercel.app/" class="project-link" target="_blank">View Project →</a>
+      </div>
+      <div class="card">
+        <h3>BookYourCelebrity (Landing Page)</h3>
+        <p class="project-type">Website - Commercial</p>
+        <p>Responsive landing page for a celebrity booking platform designed to present services clearly and drive user engagement.</p>
+        <p class="project-tech">HTML • CSS • JavaScript</p>
+        <a href="https://bookyourcelebrity.com/" class="project-link" target="_blank">View Project →</a>
+      </div>
+    </div>    
+  </section>
+
+
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="from_name" placeholder="Your name" required />
+      <input type="email" name="email_id" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+      <p class="contact_message" id="contact-message"></p>
+    </form>
+  </section>
+  
+  <section id="social">
+    <h3></h3>
+    <div class="social">
+      <a class="linkedin" href="https://www.linkedin.com/in/sharan-vijayan-9880a9256/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a class="github" href="https://github.com/sharanvijayan13" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a class="twitter" href="https://x.com/sharanvijayann" target="_blank">	<i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Sharan Vijayan, 2025. All rights reserved.</p>
+  </footer>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <button id="closeBtn" class="close-btn">&times;</button>
+    <div class="mobile-links">
+      <nav>
+        <div class="mobile-links">
+          <a href="#about">About</a>
+          <a href="#skills">Tech Stack</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay hidden"></div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
