@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
   const [message, setMessage] = useState('')
@@ -11,14 +12,12 @@ export default function Contact() {
     const form = e.currentTarget
     
     try {
-      // Check if EmailJS is available
-      if (typeof window === 'undefined' || !(window as any).emailjs) {
-        throw new Error('EmailJS not loaded')
-      }
-      
-      const emailjs = (window as any).emailjs
-      
-      await emailjs.sendForm('service_2utfk6r', 'template_s8e73im', form, 'Za1y2wf9uII6INU1O')
+      await emailjs.sendForm(
+        'service_2utfk6r',
+        'template_s8e73im',
+        form,
+        'Za1y2wf9uII6INU1O'
+      )
       
       setMessage('Message sent ✅')
       form.reset()
@@ -26,12 +25,12 @@ export default function Contact() {
       setTimeout(() => {
         setMessage('')
       }, 5000)
-    } catch (error) {
+    } catch (error: any) {
       setMessage('Failed to send message. Please try again.')
       setTimeout(() => {
         setMessage('')
       }, 5000)
-      console.error('EmailJS error:', error)
+      console.error('EmailJS error:', error?.text || error?.message || error)
     }
   }
 

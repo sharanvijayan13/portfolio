@@ -21,12 +21,6 @@ export default function RootLayout({
       <body>
         {children}
         <Script src="https://unpkg.com/aos@next/dist/aos.js" strategy="beforeInteractive" />
-        <Script src="https://cdn.emailjs.com/dist/email.min.js" strategy="beforeInteractive" />
-        <Script id="emailjs-init" strategy="afterInteractive">
-          {`(function(){
-            emailjs.init("Za1y2wf9uII6INU1O");
-          })();`}
-        </Script>
       </body>
     </html>
   )
