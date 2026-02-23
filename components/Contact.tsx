@@ -9,21 +9,23 @@ export default function Contact() {
     e.preventDefault()
     
     const form = e.currentTarget
-    const formData = new FormData(form)
     
     try {
-      // Initialize EmailJS if not already done
-      if (typeof window !== 'undefined' && (window as any).emailjs) {
-        const emailjs = (window as any).emailjs
-        
-        await emailjs.sendForm('service_2utfk6r', 'template_s8e73im', form)
-        setMessage('Message sent ✅')
-        form.reset()
-        
-        setTimeout(() => {
-          setMessage('')
-        }, 5000)
+      // Check if EmailJS is available
+      if (typeof window === 'undefined' || !(window as any).emailjs) {
+        throw new Error('EmailJS not loaded')
       }
+      
+      const emailjs = (window as any).emailjs
+      
+      await emailjs.sendForm('service_2utfk6r', 'template_s8e73im', form, 'Za1y2wf9uII6INU1O')
+      
+      setMessage('Message sent ✅')
+      form.reset()
+      
+      setTimeout(() => {
+        setMessage('')
+      }, 5000)
     } catch (error) {
       setMessage('Failed to send message. Please try again.')
       setTimeout(() => {
