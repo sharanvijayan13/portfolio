@@ -1,6 +1,6 @@
 export default function Social() {
   return (
-    <section id="social">
+    <section id="social" style={{ paddingTop: '20px' }}>
       <h3></h3>
       <div className="social">
         <a className="linkedin" href="https://www.linkedin.com/in/sharan-vijayan-9880a9256/" target="_blank" rel="noopener noreferrer">
