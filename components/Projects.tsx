@@ -3,28 +3,28 @@ export default function Projects() {
     {
       title: 'Purple NICU',
       type: 'Website - Commercial',
-      description: 'Healthcare website built with a clean, responsive UI to showcase neonatal care services and support families with clear, accessible information.',
+      description: 'Official website for Purple Maternal and Childcare Pvt Ltd, designed to showcase the hospital\'s services, facilities, and neonatal care information through a clean and responsive interface.',
       tech: 'Next.js • Tailwind CSS',
       link: 'https://purplenicu.com/'
     },
     {
       title: 'InkSigma',
       type: 'Web App - Commercial',
-      description: 'Redesigned collaborative blogging platform focused on improved UX, performance, and editorial workflows for multi-tenant content publishing.',
+      description: 'Collaborative blogging platform that allows writers and teams to create publications with dedicated subdomains, enabling structured content publishing and editorial workflows.',
       tech: 'Next.js • Express.js • Tailwind CSS • PostgreSQL',
       link: 'https://inksigma.com/'
     },
     {
       title: 'Shaflix',
       type: 'Web App - Personal',
-      description: 'Mood-based movie discovery web app that enables users to explore and filter movies through an intuitive, responsive interface.',
+      description: 'Letterboxd-inspired movie platform with mood-based film suggestions where users can discover, track, and organize their watched and favorite movies.',
       tech: 'Next.js • TypeScript • Tailwind CSS',
       link: 'https://shaflix-app.vercel.app/'
     },
     {
-      title: 'BookYourCelebrity (Landing Page)',
+      title: 'BookYourCelebrity',
       type: 'Website - Commercial',
-      description: 'Responsive landing page for a celebrity booking platform designed to present services clearly and drive user engagement.',
+      description: 'Celebrity booking platform that helps clients discover and book artists for events through a network of agents and performers.',
       tech: 'HTML • CSS • JavaScript',
       link: 'https://bookyourcelebrity.com/'
     }
